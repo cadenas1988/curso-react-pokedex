@@ -1,0 +1,15 @@
+1.- Instalar Node JS, GIT y VSCode
+2.- Ir a esta página: https://create-react-app.dev/docs/adding-typescript/
+3.- Crear carpeta del Proyecto y abrir terminal Git Bash Here
+4.- Ejecutar npx create-react-app curso-react --template typescript
+5.- Abrir desde VsCode la carpeta del Proyecto
+6.- Abrir terminal y ejecutar: npm run start
+7.- Agregar rutas: npm i react-router-dom
+8.- Agregar bootstrap: https://react-bootstrap.netlify.app/docs/getting-started/introduction
+9.- Instalar:npm install react-bootstrap bootstrap
+10.- Iconos: https://www.flaticon.es/
+11.- Publicar
+git remote add origin https://github.com/cadenas1988/curso-react-pokedex.git
+git branch -M main
+git push -u origin main
+git add.
