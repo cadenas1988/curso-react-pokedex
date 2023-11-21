@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import react, {useEffect,useState} from "react";
 /*TODO: Importar librerías de bootstrap*/
 import Card from 'react-bootstrap/Card';

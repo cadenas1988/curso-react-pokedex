@@ -12,4 +12,40 @@
 git remote add origin https://github.com/cadenas1988/curso-react-pokedex.git
 git branch -M main
 git push -u origin main
-git add.
+git add .
+git commit -m "20/11/23 Subiendo"
+git push
+
+para actualizar
+git add .
+git commit -m "20/11/23 cambios en el readme"
+git push
+
+Construir
+npm run build
+
+Lecciones aprendidas
+al dar en terminal en un project de react y escribir npm rum build mandó esto: Creating an optimized production build...
+One of your dependencies, babel-preset-react-app, is importing the
+"@babel/plugin-proposal-private-property-in-object" package without
+declaring it in its dependencies. This is currently working because
+"@babel/plugin-proposal-private-property-in-object" is already in your
+node_modules folder for unrelated reasons, but it may break at any time.
+
+babel-preset-react-app is part of the create-react-app project, which
+is not maintianed anymore. It is thus unlikely that this bug will
+ever be fixed. Add "@babel/plugin-proposal-private-property-in-object" to
+your devDependencies to work around this error. This will make this message
+go away.
+
+chatgpt  
+El mensaje que estás viendo indica que hay un problema con una dependencia llamada babel-preset-react-app en tu proyecto de React. Esta dependencia está importando el paquete "@babel/plugin-proposal-private-property-in-object" sin declararlo en sus propias dependencias. Aunque esto puede estar funcionando actualmente debido a la presencia del paquete en tu carpeta node_modules por razones no relacionadas, podría dejar de funcionar en cualquier momento.
+
+Para resolver este problema, el mensaje sugiere agregar "@babel/plugin-proposal-private-property-in-object" a las dependencias de desarrollo (devDependencies) de tu proyecto. Esto se puede hacer ejecutando el siguiente comando en la terminal dentro de tu proyecto de React:
+
+npm install --save-dev @babel/plugin-proposal-private-property-in-object
+
+
+Este comando instalará el paquete y lo agregará a la sección devDependencies de tu archivo package.json. Después de hacer esto, vuelve a ejecutar el comando npm run build y deberías ver que el mensaje de advertencia ya no aparece.
+
+Ten en cuenta que este mensaje específico parece estar relacionado con el hecho de que babel-preset-react-app es parte del proyecto create-react-app, que según el mensaje, no está siendo mantenido actualmente. Si es posible, podrías considerar migrar a otras configuraciones de Babel y Webpack para tu proyecto, o seguir utilizando la configuración actual y simplemente añadir la dependencia mencionada para evitar el mensaje de advertencia.
